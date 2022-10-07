@@ -11,5 +11,7 @@
   "toggle": "toggle",
   "Переключить": "Переключить",
   "Короткий язык": "En",
-  "Войти": "Войти"
+  "Войти": "Войти",
+  "decrement": "decrement",
+  "increment": "increment"
 }
