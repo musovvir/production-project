@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Provider } from 'react-redux';
-import { createConfigureStore } from 'app/providers/StoreProvider/config/store';
+import { createReduxStore } from 'app/providers/StoreProvider/config/store';
 import { StateSchema } from 'app/providers/StoreProvider/config/StateSchema';
 import { DeepPartial, ReducersMapObject } from '@reduxjs/toolkit';
 
@@ -17,7 +17,7 @@ export const StoreProvider = (props: StoreProviderProps) => {
         asyncReducers,
     } = props;
 
-    const store = createConfigureStore(
+    const store = createReduxStore(
       initialState as StateSchema,
       asyncReducers as ReducersMapObject<StateSchema>,
     );

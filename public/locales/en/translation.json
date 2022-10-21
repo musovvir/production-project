@@ -16,5 +16,8 @@
   "Вы ввели неверный логин или пароль": "Uncorrected username or password",
   "<": "<",
   ">": ">",
-  "Короткий язык": "En"
+  "Короткий язык": "En",
+  "Язык": "En",
+  "Profile Page": "Profile Page",
+  "Профиль": "Profile"
 }
