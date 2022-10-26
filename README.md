@@ -57,5 +57,6 @@
 - React.memo
 - useMemo
 - useCallback
+- debounce
 
 Скриншоты приложения: (скоро будут)
