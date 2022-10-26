@@ -55,8 +55,8 @@
 - Асинхронная подгрузка редюсеров
 - React.lazy
 - React.memo
+- Debounce
 - useMemo
 - useCallback
-- debounce
 
 Скриншоты приложения: (скоро будут)
