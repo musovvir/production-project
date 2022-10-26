@@ -6,6 +6,7 @@
 - Redux-Toolkit
 - React-Router-Dom
 - TypeScript
+- CI/CD
 - SASS
 - Storybook
 - JEST
