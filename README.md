@@ -17,13 +17,13 @@
 - json-server
 
 ### Архитектурой проекта выбрана Feature Sliced Design
-### Настройка сборки проекта производилась с полного нуля с помощью webpack5
+### Настройка сборки проекта производилась с полного нуля с помощью webpack 5
 
 ### Инструкция по запуску:
 
 1. Скачайте приложение с GitHub:
 
-### `git clone https://github.com/musovvir/production-project.git`
+### `git clone https://github.com/musovvir/react-habr.git`
 
 2. Введите в терминале команду:
 
