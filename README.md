@@ -6,7 +6,7 @@
 - Redux-Toolkit
 - React-Router-Dom
 - TypeScript
-- CI/CD
+- CI/CD (GitHub Actions)
 - SASS
 - Storybook
 - JEST
