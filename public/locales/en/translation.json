@@ -10,6 +10,7 @@
   "О сайте": "About us",
   "Переключить": "Toggle",
   "Войти": "SignIn",
+  "Выйти": "Logout",
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Форма авторизации": "Authorization form",
@@ -18,5 +19,10 @@
   ">": ">",
   "Короткий язык": "En",
   "Язык": "En",
-  "Profile Page": "Profile Page"
+  "Profile Page": "Profile Page",
+  "Профиль": "Profile",
+  "Валюта": "Валюта",
+  "Страна": "Страна",
+  "Сохранить": "Save",
+  "Отмена": "Cancel"
 }

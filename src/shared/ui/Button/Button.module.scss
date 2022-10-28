@@ -20,6 +20,14 @@
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     background: none;
+    border-radius: 5px;
+}
+
+.outlineRed {
+    border: 1px solid var(--red-light);
+    color: var(--red-light);
+    background: none;
+    border-radius: 5px;
 }
 
 .background {
@@ -36,6 +44,8 @@
 
 .square {
     padding: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .square.size_m {
