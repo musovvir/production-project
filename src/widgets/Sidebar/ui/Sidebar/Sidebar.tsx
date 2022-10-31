@@ -44,7 +44,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                 size={ButtonSize.L}
                 square
             >
-                {t(collapsed ? '>' : '<')}
+                {collapsed ? '>' : '<'}
             </Button>
             <div className={cls.items}>
                 {itemsList}
