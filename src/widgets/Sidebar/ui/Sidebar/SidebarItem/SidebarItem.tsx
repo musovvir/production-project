@@ -21,6 +21,7 @@ export const SidebarItem = memo(({ item, collapsed }: SidebarItemProps) => {
     }
 
     return (
+    /* i18next-extract-disable-line */
         <AppLink
             theme={AppLinkTheme.SECONDARY}
             to={item.path}
