@@ -141,13 +141,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://atos.net/wp-content/uploads/2020/07/hacking-blog-image-768x706.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://atos.net/wp-content/uploads/2020/07/hacking-blog-image-768x706.jpg"
     }
   ],
   "profile": {
