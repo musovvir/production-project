@@ -154,6 +154,12 @@
       "userId": "2",
       "text": "Hello, World!",
       "id": "RhHDEsB"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "BBB",
+      "id": "lcmRI2i"
     }
   ],
   "users": [
