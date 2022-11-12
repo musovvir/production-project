@@ -29,7 +29,9 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -134,6 +136,24 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Lorem ipsum",
+      "id": "wz6Hs13"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "WDWDWDWDDW",
+      "id": "Yf50FRp"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Hello, World!",
+      "id": "RhHDEsB"
     }
   ],
   "users": [
@@ -152,14 +172,28 @@
       "avatar": "https://atos.net/wp-content/uploads/2020/07/hacking-blog-image-768x706.jpg"
     }
   ],
-  "profile": {
-    "first": "Висхан",
-    "lastname": "Музагов",
-    "age": 28,
-    "currency": "USD",
-    "city": "Grozny",
-    "username": "musovvir",
-    "avatar": "https://atos.net/wp-content/uploads/2020/07/hacking-blog-image-768x706.jpg",
-    "country": "Belarus"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Висхан",
+      "lastname": "Музагов",
+      "age": 28,
+      "currency": "USD",
+      "city": "Grozny",
+      "username": "musovvir",
+      "avatar": "https://atos.net/wp-content/uploads/2020/07/hacking-blog-image-768x706.jpg",
+      "country": "Belarus"
+    },
+    {
+      "id": "2",
+      "first": "Ислам",
+      "lastname": "Музагов",
+      "age": 18,
+      "currency": "USD",
+      "city": "Grozny",
+      "username": "muzagov",
+      "avatar": "https://s.wsj.net/public/resources/images/BN-JC756_cover_J_20150626104454.jpg",
+      "country": "Russia"
+    }
+  ]
 }
