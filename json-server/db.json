@@ -29,6 +29,7 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png",
       "views": 1022,
       "createdAt": "26.02.2022",
+      "userId": "1",
       "type": [
         "IT"
       ],
@@ -175,7 +176,7 @@
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://atos.net/wp-content/uploads/2020/07/hacking-blog-image-768x706.jpg"
+      "avatar": "https://s.wsj.net/public/resources/images/BN-JC756_cover_J_20150626104454.jpg"
     }
   ],
   "profile": [
