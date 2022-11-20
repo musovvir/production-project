@@ -34,11 +34,11 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'type'],
+            ignoreAttribute: ['data-testid', 'to', 'type', 'target'],
         }],
         'max-len': ['error', {
             ignoreComments: true,
-            code: 120,
+            code: 140,
         }],
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
@@ -47,6 +47,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,

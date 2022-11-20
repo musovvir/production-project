@@ -37,7 +37,7 @@ export const CommentList = memo((props: CommentListProps) => {
                         key={comment.id}
                     />
                 ))
-                : <Text text={t('Комментарии отсутсвуют')} />}
+                : <Text text={t('Комментарии отсутсвуют')} className={cls.title} />}
         </div>
     );
 });
