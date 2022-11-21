@@ -33,7 +33,7 @@ export const Tabs = memo((props: TabsProps) => {
                     key={tab.value}
                     onClick={clickHandle(tab)}
                 >
-                    {tab.value}
+                    {tab.content}
                 </Card>
             ))}
         </div>
