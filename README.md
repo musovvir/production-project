@@ -7,6 +7,7 @@
 - React-Router-Dom
 - TypeScript
 - CI/CD (GitHub Actions)
+- CSS Modules
 - SASS
 - Storybook
 - JEST
