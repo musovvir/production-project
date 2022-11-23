@@ -15,13 +15,13 @@ import CalendarIcon from 'shared/assets/icons/calendar-20-20.svg';
 import { Icon } from 'shared/ui/Icon/Icon';
 import {
     ArticleCodeBlockComponent,
-} from 'entities/Article/ui/ArticleCodeBlockComponent/ArticleCodeBlockComponent';
+} from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import {
     ArticleImageBlockComponent,
-} from 'entities/Article/ui/ArticleImageBlockComponent/ArticleImageBlockComponent';
+} from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import {
     ArticleTextBlockComponent,
-} from 'entities/Article/ui/ArticleTextBlockComponent/ArticleTextBlockComponent';
+} from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import {
     getArticleDetailsData,
     getArticleDetailsError,
