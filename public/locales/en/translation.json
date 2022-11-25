@@ -21,7 +21,7 @@
   "Язык": "En",
   "Profile Page": "Profile Page",
   "Профиль": "Profile",
-  "Валюта": "Валюта",
+  "Валюта": "Currency",
   "Страна": "Country",
   "Сохранить": "Save",
   "Отмена": "Cancel",
@@ -48,5 +48,6 @@
   "Редактирование статьи с ID - ${id}": "Editing an article by ID - ${id}",
   "musovvir": "musovvir",
   "Создать статью": "Create article",
-  "Статьи": "Articles"
+  "Статьи": "Articles",
+  "Укажите валюту": "Укажите валюту"
 }
