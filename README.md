@@ -4,6 +4,7 @@
 
 - React
 - Redux-Toolkit
+- RTK Query
 - React-Router-Dom
 - TypeScript
 - CI/CD (GitHub Actions)
