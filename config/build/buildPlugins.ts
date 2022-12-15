@@ -2,6 +2,7 @@ import * as webpack from 'webpack';
 import { HotModuleReplacementPlugin } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import CopyPlugin from 'copy-webpack-plugin';
+import CircularDependencyPlugin from 'circular-dependency-plugin';
 import { BuildOptions } from './types/config';
 
 const HTMLWebpackPlugin = require('html-webpack-plugin');
@@ -29,6 +30,10 @@ export function buildPlugins({
             patterns: [
                 { from: paths.locales, to: paths.buildLocales },
             ],
+        }),
+        new CircularDependencyPlugin({
+            exclude: /node_modules/,
+            failOnError: true,
         }),
     ];
 
