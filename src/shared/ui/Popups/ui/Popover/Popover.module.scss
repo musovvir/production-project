@@ -1,0 +1,8 @@
+.panel {
+    background: var(--listbox-bg);
+    position: absolute;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px var(--listbox-bg);
+    padding: 15px;
+}
