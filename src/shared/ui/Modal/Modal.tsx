@@ -16,9 +16,15 @@ interface ModalProps {
 
 const ANIMATION_DELAY = 300;
 
-export const Modal = ({
-    className, children, isOpen, onClose, lazy,
-}: ModalProps) => {
+export const Modal = (props: ModalProps) => {
+    const {
+        className,
+        children,
+        isOpen,
+        onClose,
+        lazy,
+    } = props;
+
     const {
         close,
         isClosing,
@@ -28,6 +34,7 @@ export const Modal = ({
         onClose,
         isOpen,
     });
+
     const { theme } = useTheme();
 
     const mods: Mods = {
@@ -41,7 +48,7 @@ export const Modal = ({
 
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className])}>
+            <div className={classNames(cls.Modal, mods, [className, theme, 'app_modal'])}>
                 <Overlay onClick={close} />
                 <div
                     className={cls.content}
