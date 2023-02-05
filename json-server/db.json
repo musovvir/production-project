@@ -665,5 +665,65 @@
       "avatar": "https://s.wsj.net/public/resources/images/BN-JC756_cover_J_20150626104454.jpg",
       "country": "Russia"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Плохая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 3,
+      "feedback": "",
+      "id": "TadDnRf"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 5,
+      "feedback": "great article!",
+      "id": "SrdGc1_"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 2,
+      "feedback": "dfdf",
+      "id": "Mr6C46g"
+    },
+    {
+      "userId": "1",
+      "articleId": "13",
+      "rate": 3,
+      "feedback": "!!!",
+      "id": "1Ge_W4w"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 2,
+      "feedback": "Плохая статья",
+      "userId": "2",
+      "profileId": "2"
+    }
   ]
 }
