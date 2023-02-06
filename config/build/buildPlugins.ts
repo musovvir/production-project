@@ -1,9 +1,9 @@
 import * as webpack from 'webpack';
 import { HotModuleReplacementPlugin } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import CopyPlugin = require('copy-webpack-plugin');
-import CircularDependencyPlugin = require('circular-dependency-plugin');
-import ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+import CopyPlugin from 'copy-webpack-plugin';
+import CircularDependencyPlugin from 'circular-dependency-plugin';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { BuildOptions } from './types/config';
 
 const HTMLWebpackPlugin = require('html-webpack-plugin');
