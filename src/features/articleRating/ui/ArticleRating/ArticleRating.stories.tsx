@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import ArticleRating from './ArticleRating';
 
 export default {
-    title: 'shared/ArticleRating',
+    title: 'features/ArticleRating',
     component: ArticleRating,
     argTypes: {
         backgroundColor: { control: 'color' },
