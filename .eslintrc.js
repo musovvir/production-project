@@ -40,7 +40,19 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'type', 'target', 'justify', 'align', 'direction', 'gap', 'role', 'as', 'border'],
+            ignoreAttribute: [
+                'data-testid',
+                'to',
+                'type',
+                'target',
+                'justify',
+                'align',
+                'direction',
+                'gap',
+                'role',
+                'as',
+                'border',
+            ],
         }],
         'max-len': ['error', {
             ignoreComments: true,
@@ -54,7 +66,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'musovvir-dev/path-checker': 'error',
+        'musovvir-dev/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

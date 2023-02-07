@@ -6,7 +6,7 @@ import { getUserAuthData } from '@/entities/User';
 import {
     useGetProfileRatings,
     useRateProfile,
-} from '@/features/profileRating/api/profileRatingApi';
+} from '../../api/profileRatingApi';
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 
 export interface ProfileRatingProps {
