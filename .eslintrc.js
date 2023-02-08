@@ -67,6 +67,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'musovvir-dev/path-checker': ['error', { alias: '@' }],
+        'musovvir-dev/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
