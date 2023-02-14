@@ -1,71 +1,193 @@
-# Аналог Хабр (в разработке)
+## Запуск проекта
 
-### Технологии:
+```
+npm install - устанавливаем зависимости
+npm run start:dev или npm run start:dev:vite - запуск сервера + frontend проекта в dev режиме
+```
+---
+## Скрипты
+- `npm run start` - Запуск frontend проекта на webpack dev server
+- `npm run start:vite` - Запуск frontend проекта на vite
+- `npm run start:dev` - Запуск frontend проекта на webpack dev server + backend
+- `npm run start:dev:vite` - Запуск frontend проекта на vite + backend
+- `npm run start:dev:server` - Запуск backend сервера
+- `npm run build:prod` - Сборка в prod режиме
+- `npm run build:dev` - Сборка в dev режиме (не минимизирован)
+- `npm run lint:ts` - Проверка ts файлов линтером
+- `npm run lint:ts:fix` - Исправление ts файлов линтером
+- `npm run lint:scss` - Проверка scss файлов style линтером
+- `npm run lint:scss:fix` - Исправление scss файлов style линтером
+- `npm run test:unit` - Хапуск unit тестов с jest
+- `npm run test:ui` - Хапуск скриншотных тестов с loki
+- `npm run test:ui:ok` - Подтверждение новых скриншотов
+- `npm run test:ui:ci` - Запуск скриншотных тестов в CI
+- `npm run test:ui:report` - Генерация полного отчета для скриншотных тестов
+- `npm run test:ui:json` - Генерация json отчета для скриншотных тестов
+- `npm run test:ui:html` - Генерация HTML отчета для скриншотных тестов
+- `npm run storybook` - запуск Storybook
+- `npm run storybook:build` - Сборка storybook билда
+- `npm run prepare` - прекоммит хуки
+- `npm run generate:slice` - Скрипт для генерации FSD слайсов
+- `npm run create-pub-api` - Скрипт для генерации public api
+- `npm run ref-imports` - Скрипт для исправления импортов
+---
 
-- React
-- Redux-Toolkit
-- RTK Query
-- React-Router-Dom
-- TypeScript
-- CI/CD (GitHub Actions)
-- CSS Modules
-- SASS
-- Storybook
-- JEST
-- Husky
-- axios
-- react-i18next
-- Loki
-- json-server
+## Архитектура проекта
 
-### Архитектурой проекта выбрана Feature Sliced Design
-### Сборка и оптимизация приложения производилась с полного нуля с помощью webpack 5
+Проект написан в соответствии с методологией Feature Sliced Design.
+Ссылка на документацию: [Feature Sliced Design](https://feature-sliced.design/)
+---
 
-### Инструкция по запуску:
+## Работа с переводами
 
-1. Скачайте приложение с GitHub:
+В проекте используется библиотека i18next для работы с переводами.
+Файлы с переводами хранятся в public/locales.
 
-### `git clone https://github.com/musovvir/react-habr.git`
+Для комфортной работы рекомендую установить плагин для webstorm/vscode
 
-2. Введите в терминале команду:
+Документация i18next: [https://react.i18next.com/](https://react.i18next.com/)
 
-### `npm i`
+---
 
-3. Затем команду:
+## Тесты
 
-### `npm start`
+В проекте используются 4 вида тестов:
+1) Обычные unit тесты на JEST - `npm run test:unit`
+2) Тесты на компоненты с React testing library -`npm run test:unit`
+3) Скриншотное тестирование с loki `npm run test:ui`
+4) e2e тестирование с Cypress `npm run test:e2e`
 
-### Данные для авторизации
+Подробнее о тестах - [документация тестирования](/docs/tests.md)
 
-- Логин: admin
-- Пароль: 123
+---
 
-### Возможности приложения:
+## Линтинг
 
-- авторизация
-- фильтры
-- сортировка
-- поиск
-- добавление постов
-- изменение постов
-- изменение профиля
-- удаление постов
-- поиск по названию
-- измения ролей
-- темизация
-- бесконечная лента
-- виртуализация
-- скелетон
- и мн. др.
+В проекте используется eslint для проверки typescript кода и stylelint для проверки файлов со стилями.
 
-### По оптимизации:
+Также для строгого контроля главных архитектурных принципов
+используется собственный eslint plugin *eslint-plugin-musovvir-dev*,
+который содержит 3 правила
+1) path-checker - запрещает использовать абсолютные импорты в рамках одного модуля
+2) layer-imports - проверяет корректность использования слоев с точки зрения FSD
+   (например widgets нельзя использовать в features и entities)
+3) public-api-imports - разрешает импорт из других модулей только из public api. Имеет auto fix
 
-- Разбивка бандла на чанки
-- Асинхронная подгрузка редюсеров 
-- React.lazy
-- React.memo
-- Debounce
-- useMemo
-- useCallback
+##### Запуск линтеров
+- `npm run lint:ts` - Проверка ts файлов линтером
+- `npm run lint:ts:fix` - Исправление ts файлов линтером
+- `npm run lint:scss` - Проверка scss файлов style линтером
+- `npm run lint:scss:fix` - Исправление scss файлов style линтером
 
-Скриншоты приложения: (скоро будут)
+---
+## Storybook
+
+В проекте для каждого компонента описываются стори-кейсы.
+Запросы на сервер мокаются с помощью storybook-addon-mock.
+
+Файл со сторикейсами создает рядом с компонентом с расширением .stories.tsx
+
+Запустить сторибук можно командой:
+- `npm run storybook`
+
+Подробнее о [Storybook](/docs/storybook.md)
+
+Пример:
+
+```typescript jsx
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Button, ButtonSize, ButtonTheme } from './Button';
+import { Theme } from '@/shared/const/theme';
+
+export default {
+    title: 'shared/Button',
+    component: Button,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+} as ComponentMeta<typeof Button>;
+
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+    children: 'Text',
+};
+
+export const Clear = Template.bind({});
+Clear.args = {
+    children: 'Text',
+    theme: ButtonTheme.CLEAR,
+};
+```
+
+---
+
+## Конфигурация проекта
+
+Для разработки проект содержит 2 конфига:
+1. Webpack - ./config/build
+2. vite - vite.config.ts
+
+Оба сборщика адаптированы под основные фичи приложения.
+
+Вся конфигурация хранится в /config
+- /config/babel - babel
+- /config/build - конфигурация webpack
+- /config/jest - конфигурация тестовой среды
+- /config/storybook - конфигурация сторибука
+
+В папке `scripts` находятся различные скрипты для рефакторинга\упрощения написания кода\генерации отчетов и тд.
+
+---
+
+## CI pipeline и pre-commit хуки
+
+Конфигурация github actions находится в /.github/workflows.
+В ci прогоняются все виды тестов, сборка проекта и сторибука, линтинг.
+
+В прекоммит хуках проверяем проект линтерами, конфиг в /.husky
+
+---
+
+### Работа с данными
+
+Взаимодействие с данными осуществляется с помощью redux toolkit.
+По возможности переиспользуемые сущности необходимо нормализовать с помощью EntityAdapter
+
+Запросы на сервер отправляются с помощью [RTK query](/src/shared/api/rtkApi.ts)
+
+Для асинхронного подключения редюсеров (чтобы не тянуть их в общий бандл) используется
+[DynamicModuleLoader](/src/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader.tsx)
+
+---
+
+## Сущности (entities)
+
+- [Article](/src/entities/Article)
+- [Comment](/src/entities/Comment)
+- [Counter](/src/entities/Counter)
+- [Country](/src/entities/Country)
+- [Currency](/src/entities/Currency)
+- [Notification](/src/entities/Notification)
+- [Profile](/src/entities/Profile)
+- [Rating](/src/entities/Rating)
+- [User](/src/entities/User)
+
+## Фичи (features)
+
+- [addCommentForm](/src/features/addCommentForm)
+- [articleEditForm](/src/features/articleEditForm)
+- [articleRating](/src/features/articleRating)
+- [articleRecommendationsList](/src/features/articleRecommendationsList)
+- [AuthByUsername](/src/features/AuthByUsername)
+- [avatarDropdown](/src/features/avatarDropdown)
+- [editableProfileCard](/src/features/editableProfileCard)
+- [LangSwitcher](/src/features/LangSwitcher)
+- [notificationButton](/src/features/notificationButton)
+- [profileRating](/src/features/profileRating)
+- [ThemeSwitcher](/src/features/ThemeSwitcher)
+- [ScrollSave](/src/features/ScrollSave)
