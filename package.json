@@ -27,7 +27,8 @@
     "prepare": "husky install",
     "generate:slice": "node ./scripts/createSlice/index.js",
     "create-pub-api": "ts-node ./scripts/refactoring/createPublicApiForSharedUi.ts",
-    "ref-imports": "ts-node ./scripts/refactoring/updateImports.ts"
+    "ref-imports": "ts-node ./scripts/refactoring/updateImports.ts",
+    "postinstall": "node ./scripts/clear-cache.js"
   },
   "keywords": [],
   "author": "",
