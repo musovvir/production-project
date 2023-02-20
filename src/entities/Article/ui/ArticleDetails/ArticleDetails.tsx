@@ -9,7 +9,6 @@ import {
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Text, TextAlign, TextSize } from '@/shared/ui/Text';
 import { Skeleton } from '@/shared/ui/Skeleton';
-import { Avatar } from '@/shared/ui/Avatar';
 import EyeIcon from '@/shared/assets/icons/eye-20-20.svg';
 import CalendarIcon from '@/shared/assets/icons/calendar-20-20.svg';
 import { Icon } from '@/shared/ui/Icon';
@@ -33,6 +32,7 @@ import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArt
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import { ArticleBlock } from '../../model/types/article';
+import { AppImage } from '@/shared/ui/AppImage';
 
 interface ArticleDetailsProps {
     className?: string;
@@ -86,8 +86,8 @@ export const ArticleDetails = memo(({ className, id }: ArticleDetailsProps) => {
         content = (
             <>
                 <HStack justify="center" max className={cls.avatarWrapper}>
-                    <Avatar
-                        size={200}
+                    <AppImage
+                        // size={200}
                         src={article?.img}
                         className={cls.avatar}
                     />
