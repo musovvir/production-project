@@ -21,9 +21,6 @@ import {
     ArticleImageBlockComponent,
 } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import {
-    ArticleTextBlockComponent,
-} from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
-import {
     getArticleDetailsData,
     getArticleDetailsError,
     getArticleDetailsIsLoading,
@@ -33,6 +30,9 @@ import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import { ArticleBlock } from '../../model/types/article';
 import { AppImage } from '@/shared/ui/AppImage';
+import {
+    ArticleTextBlockComponent,
+} from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 
 interface ArticleDetailsProps {
     className?: string;
