@@ -646,6 +646,15 @@
         "MANAGER"
       ],
       "avatar": "https"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https"
     }
   ],
   "profile": [
