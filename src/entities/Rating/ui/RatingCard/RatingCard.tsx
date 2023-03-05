@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card } from '@/shared/ui/Card';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text';
@@ -55,6 +54,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                 title={feedbackTitle}
             />
             <Input
+                data-testid="RatingCard.Input"
                 value={feedback}
                 onChange={setFeedback}
                 placeholder={t('Ваш отзыв')}
@@ -63,7 +63,11 @@ export const RatingCard = memo((props: RatingCardProps) => {
     );
 
     return (
-        <Card className={classNames('', {}, [className])} max>
+        <Card
+            className={className}
+            max
+            data-testid="RatingCard"
+        >
             <VStack align="center" gap="8" max>
                 <Text title={starsCount ? t('Спасибо за оценку!') : title} />
                 <StarRating size={50} onSelect={onSelectStart} selectedStars={starsCount} />
@@ -73,10 +77,17 @@ export const RatingCard = memo((props: RatingCardProps) => {
                     <VStack max gap="32">
                         {modalContent}
                         <HStack max gap="16" justify="end">
-                            <Button onClick={cancelHandle} theme={ButtonType.OUTLINE_RED}>
+                            <Button
+                                data-testid="RatingCard.Close"
+                                onClick={cancelHandle}
+                                theme={ButtonType.OUTLINE_RED}
+                            >
                                 {t('Закрыть')}
                             </Button>
-                            <Button onClick={acceptHandle}>
+                            <Button
+                                data-testid="RatingCard.Send"
+                                onClick={acceptHandle}
+                            >
                                 {t('Отправить')}
                             </Button>
                         </HStack>

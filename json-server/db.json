@@ -537,6 +537,71 @@
           ]
         }
       ]
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Экономика",
+      "img": "https://img.freepik.com/free-vector/science-word-concept_23-2148533907.jpg?w=2000",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "rdjGBEt"
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Экономика",
+      "img": "https://img.freepik.com/free-vector/science-word-concept_23-2148533907.jpg?w=2000",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "PJclwV1"
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Экономика",
+      "img": "https://img.freepik.com/free-vector/science-word-concept_23-2148533907.jpg?w=2000",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "S1L1qFh"
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Экономика",
+      "img": "https://img.freepik.com/free-vector/science-word-concept_23-2148533907.jpg?w=2000",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "UQNbixy"
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Экономика",
+      "img": "https://img.freepik.com/free-vector/science-word-concept_23-2148533907.jpg?w=2000",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "LfTC5RV"
     }
   ],
   "comments": [
@@ -617,6 +682,18 @@
       "userId": "1",
       "text": "Hello World",
       "id": "IRDHTg-"
+    },
+    {
+      "articleId": "S1L1qFh",
+      "userId": "4",
+      "text": "text",
+      "id": "JPJPJ1h"
+    },
+    {
+      "articleId": "UQNbixy",
+      "userId": "4",
+      "text": "text",
+      "id": "rx6zty_"
     }
   ],
   "users": [
@@ -677,6 +754,28 @@
       "currency": "USD",
       "city": "Grozny",
       "username": "muzagov",
+      "avatar": "https://s.wsj.net/public/resources/images/BN-JC756_cover_J_20150626104454.jpg",
+      "country": "Russia"
+    },
+    {
+      "id": "3",
+      "first": "Бекхан",
+      "lastname": "Музагов",
+      "age": 87,
+      "currency": "USD",
+      "city": "Grozny",
+      "username": "muzbek",
+      "avatar": "https://s.wsj.net/public/resources/images/BN-JC756_cover_J_20150626104454.jpg",
+      "country": "Russia"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 87,
+      "currency": "USD",
+      "city": "Grozny",
+      "username": "testuser",
       "avatar": "https://s.wsj.net/public/resources/images/BN-JC756_cover_J_20150626104454.jpg",
       "country": "Russia"
     }
